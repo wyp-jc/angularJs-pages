@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../libs/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body ng-app="myapp" ng-controller="mycontroller">
+
+
+	<div class="container-fluid box" >
+		<!-- <div class="row data">
+			{{data[option.cur-1].con}}
+		</div> -->
+
+		<div class="btn">
+			<span ng-repeat="i in page" ng-click="getCur(i)" ng-class="{on:option.cur==i}">{{i}}</span>
+		</div>
+		
+	</div>
+	<script src="../libs/angular.js"></script>
+	<script src="../js/js.js"></script>
+
+</body>
+</html>
